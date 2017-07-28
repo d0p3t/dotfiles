@@ -1,9 +1,10 @@
 [global_config]
   focus = system
+  suppress_multiple_term_dialog = True
   title_transmit_bg_color = "#be5046"
 [keybindings]
 [layouts]
-  [[default]]
+  [[second]]
     [[[child1]]]
       parent = window0
       profile = theone
@@ -11,12 +12,56 @@
     [[[window0]]]
       parent = ""
       type = Window
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 87092af9-57b7-4506-8439-e0c33dfebf7a
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:0
+      size = 1920, 1052
+      title = remco@arch: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 958
+      ratio = 0.500261096606
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 524
+      ratio = 0.500477554919
+      type = VPaned
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = 87092af9-57b7-4506-8439-e0c33dfebf7a
+    [[[terminal4]]]
+      order = 1
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = a3008923-ff25-468f-a07c-6fbcbe7937c4
+    [[[terminal5]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = b01bc29a-362b-457f-abcb-ba05a3873d0d
 [plugins]
 [profiles]
   [[default]]
-    cursor_color = "#aaaaaa"
-  [[theone]]
     background_color = "#272b33"
     cursor_color = "#abb2c0"
+    font = Fira Mono 12
     foreground_color = "#abb2c0"
     palette = "#272b33:#e06c75:#98c379:#d19a66:#61afef:#c678dd:#56b6c2:#abb2c0:#272b33:#e5c07b:#5c6370:#828997:#abb2bf:#c678dd:#abb2bf:#abb2c0"
+    use_system_font = False
+  [[second]]
+    cursor_color = "#aaaaaa"
