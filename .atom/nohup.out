@@ -1,0 +1,5 @@
+Attempting to call a function in a renderer window that has been closed or released. Function provided here: worker.js:71:22.
+Error: Attempting to call a function in a renderer window that has been closed or released. Function provided here: worker.js:71:22.
+    at WebContents.callIntoRenderer (/usr/share/atom/resources/electron.asar/browser/rpc-server.js:190:19)
+    at emitOne (events.js:101:20)
+    at WebContents.emit (events.js:188:7)
