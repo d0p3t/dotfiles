@@ -84,6 +84,9 @@ plugins=(colored-man-pages git)
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tensorflow="source $HOME/ENV/bin/activate"
+alias weather="curl -4 http://wttr.in/Utrecht"
+
+
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
